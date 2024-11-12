@@ -5,9 +5,13 @@ export default function AuthLayout() {
         <Stack>
             <Stack.Screen name="login" options={{
                 headerShown: false,
+                statusBarTranslucent: true,
+                navigationBarHidden: true,
             }} />
             <Stack.Screen name="signup" options={{
                 headerShown: false,
+                statusBarTranslucent: true,
+                navigationBarHidden: true,
             }} />
         </Stack>
     )

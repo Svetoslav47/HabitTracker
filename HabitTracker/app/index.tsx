@@ -11,7 +11,7 @@ export default function AuthIndexPage() {
     }
 
     return (
-        <ThemedView>
+        <ThemedView viewColor="background">
             <ThemedText>
                 actuals index
             </ThemedText>

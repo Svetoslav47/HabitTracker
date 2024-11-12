@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native";
 
 export default function LoginPage(){
     return (
-        <ThemedView>
+        <ThemedView viewType="background">
             <ThemedText>
                 login
             </ThemedText>
