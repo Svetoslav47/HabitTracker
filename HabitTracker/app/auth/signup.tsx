@@ -2,11 +2,11 @@ import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { StyleSheet } from "react-native";
 
-export default function LoginPage(){
+export default function SignUpPage(){
     return (
-        <ThemedView viewType="background">
+        <ThemedView viewColor="background">
             <ThemedText>
-                login
+                signup
             </ThemedText>
         </ThemedView>
     )
