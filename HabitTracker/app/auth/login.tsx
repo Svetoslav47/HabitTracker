@@ -12,7 +12,10 @@ export default function LoginPage(){
                     <ThemedInput label="Password" placeHolder="Enter your email" secret />
                     <ThemedCheckbox label="Remember me" viewType="border" />
                 </ThemedView>
-                <ThemedButton text="Login"  icon="login" iconSize={18}/>
+                <ThemedView style={styles.buttonContainer} viewColor="transparent" >
+                <ThemedButton text="Login"  icon="login" iconSize={18} containerStyles={styles.loginButton} containerColor="primary"/>
+                <ThemedButton text="Login With Google"  icon="google" iconSize={18} containerStyles={[styles.loginButton, styles.loginWithProvider]} containerColor="primary"/>
+                </ThemedView>           
             </ThemedView>
         </ThemedView>
     )
@@ -51,5 +54,23 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginVertical: 10,
     },
+    buttonContainer: {
+        width: '100%',
+        marginTop: 20,
+        alignItems: "center",
+        gap: 10,
+        flexDirection: 'column',
+    },
+    loginButton: {
+        marginTop: 20,
+        padding: 10,
+        width: 250,
+        alignItems: 'center',
+        borderRadius: 15,
+        justifyContent:"space-between"
+    },
+    loginWithProvider: {
+        flexDirection: 'row-reverse',
+    }
 
 });
